@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Overflow Robotics Calculator</title>
+    <header>
+        <h3 class="i">Welcome to Overflow Robotics Calculator</h3>
+
+    <!-- Main Style for the web app -->
+   
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Fluent UI Style -->
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+        <style>
+            .microsoft-login-button {
+                display: block;
+                margin: auto;
+                margin-top: 10px;
+                width: 173px; 
+                border-radius: 4px;
+                padding: 5 7px; 
+                border: 1px solid #3b3a39;
+                color: #3b3a39;
+                background-color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+            
+            .microsoft-login-button:hover {
+                text-decoration: none;
+                color: #3b3a39;
+            }
+            .microsoft-login-button img {
+                width: 70px; 
+            }
+            .shadow-effect {
+                transition: 0.3s
+            }
+            
+            .shadow-effect:hover {
+                -webkit-box-shadow: 0px 4px 15px -6px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 4px 15px -6px rgba(0,0,0,0.75);
+                box-shadow: 0px 4px 15px -6px rgba(0,0,0,0.75);
+            }
+            .i{
+                text-align:center;
+                color:aliceblue;
+            }
+            body {
+                background-image:url("R.jpg");
+            }
+           #demo {
+                color:aliceblue;
+           }
+           .Q{
+               color:aliceblue;
+           }
+            
+        </style>
+        </head>
+        <body>
+            <script type="text/javascript">
+                function Calculate() {
+                    var N=parseFloat(document.getElementById('N').value);
+                    var b=parseFloat(document.getElementById('b').value);
+                    var a=parseFloat(document.getElementById('a').value);
+                    var L=parseFloat(document.getElementById('L').value);
+                    var u= Math.pow(L,b);
+                    w=(N*a*u)/1000;
+                  document.getElementById('demo').innerHTML= w ;
+                    
+                }
+            </script>
+<p class="Q">Enter your number of fish</p>
+<input class="ms-TextField-field" type="text"name="Age" value="" placeholder="N" id="N">
+        <br><br>
+        <p class="Q">Enter length of fish in cm</p>
+        <input class="ms-TextField-field" type="text"name="Age" value="" placeholder="L" id="L">
+        <br><br>
+       <p class="Q"> Enter variable b</p><input c
+        lass="ms-TextField-field" name="Age" type="text" value="" placeholder="b" id="b">
+        <br><br>
+       <p class="Q"> Enter variable a</p><input c
+        lass="ms-TextField-field" name="Age" type="text" value="" placeholder="a" id="a">
+        <br><br>
+       <p id="demo">Mass of fish in kg</p>
+        <br>
+        <button class="microsoft-login-button shadow-effect" onclick=" Calculate()"><img src="Overflow logo.png"> Calculate
+        <br>
+       
+    </body>
